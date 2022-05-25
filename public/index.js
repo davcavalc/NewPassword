@@ -1,4 +1,4 @@
-"use strict";
+
 
 const info = document.querySelector(".info");
 const passField = document.querySelector("#password");
@@ -6,7 +6,7 @@ let password = "";
 
 function generatePassword() {
   password = "";
-  let lenght = 12;
+  let lenght = 20;
   let chars = `abcdefghijklmnopqrstuvwxyzABCEDFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%¨&*()_+-^~`;
   let n = chars.length;
   for (var i = 0; i < lenght; ++i) {
@@ -21,5 +21,4 @@ function copyText() {
   setTimeout(function(){
     info.style.opacity = "0";
   }, 1500);
-  alert("password copied!!");
 }
